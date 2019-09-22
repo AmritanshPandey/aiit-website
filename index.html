@@ -15,30 +15,32 @@
 </head>
 
 <body>
-    <nav class="transparentBG">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo center">AIIT</a>
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="" class="brand-logo">AIIT</a>
+                <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Academic</a></li>
+                    <li><a href="">Research</a></li>
+                    <li><a href="">Training & Collaborations</a></li>
+                    <li><a href="">Happenings</a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Academic</a></li>
+                    <li><a href="">Research</a></li>
+                    <li><a href="">Training & Collaborations</a></li>
+                    <li><a href="">Happenings</a></li>
+                </ul>
             </div>
-        </div>
-    </nav>
-    <div class="parallax-container">
-            <div class="parallax"> <img src="assets/bg.jpeg" alt="bg" class="background" ></div>
-          </div>
-          <div class="section white">
-            <div class="row container">
-              <h2 class="header">Campus Life</h2>
-              <p class="grey-text text-darken-3 lighten-3">A thriving community of creative and accomplished people from around the world</p>
-            </div>
-          </div>
-          <!-- <div class="parallax-container">
-            <div class="parallax"><img src="images/parallax2.jpg"></div>
-          </div>
-    -->
+        </nav>
+    </header>
 
-        <div style="height: 1000px">
 
-        </div>
 
 
 
@@ -51,6 +53,10 @@
 
     <!--Initializing JavaScript Components-->
     <script>
+        //SideNav
+        const sideNav = document.querySelector('.sidenav');
+        M.Sidenav.init(sideNav, {});
+
         //Parallax Effect
         const parallax = document.querySelectorAll('.parallax');
         M.Parallax.init(parallax, {});
