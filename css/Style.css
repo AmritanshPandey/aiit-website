@@ -2,11 +2,13 @@ header{
     background: url(../assets/bg1.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 1000px;
-    
+    min-height: 500px;  
 }
 
 
+.logo-div{
+    height: 80px;
+}
 
 @media screen and (max-width: 670px){
     header{
@@ -14,19 +16,24 @@ header{
     }
 }
 
+h2{
+    line-height: 110%;
+    font-size: 2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin: 1rem;
 
-.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
+}
+.z-depth-1, nav, .sidenav {
     -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0); 
      box-shadow: 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0); 
 }
-
 
 
 .logo{
     width: 70%;
     height: auto;
     margin: 10px auto;
-    position: fixed;
 }
 
 .header-font{
@@ -36,3 +43,56 @@ header{
     margin-top: 20px;
     z-index: 20;
 }
+
+.card-title{
+    z-index: 20;
+}
+.blue-background{
+background-color: rgb(205, 232, 255);
+}
+
+
+.card-image::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    z-index: 10;
+    background: -moz-linear-gradient(top,
+      rgba(0, 0, 0, 0) -1%,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 1%,
+      rgba(0, 0, 0, 0) 6%,
+      rgba(0, 0, 0, 0) 11%,
+      rgba(0, 0, 0, 0) 15%,
+      rgba(0, 0, 0, 1) 91%,
+      rgba(0, 0, 0, 1) 95%,
+      rgba(0, 0, 0, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,
+      rgba(0, 0, 0, 0) -1%,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 1%,
+      rgba(0, 0, 0, 0) 6%,
+      rgba(0, 0, 0, 0) 11%,
+      rgba(0, 0, 0, 0) 15%,
+      rgba(0, 0, 0, 1) 91%,
+      rgba(0, 0, 0, 1) 95%,
+      rgba(0, 0, 0, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) -1%,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 1%,
+      rgba(0, 0, 0, 0) 6%,
+      rgba(0, 0, 0, 0) 11%,
+      rgba(0, 0, 0, 0) 15%,
+      rgba(0, 0, 0, 1) 91%,
+      rgba(0, 0, 0, 1) 95%,
+      rgba(0, 0, 0, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=0);
+    /* IE6-9 */
+  }
