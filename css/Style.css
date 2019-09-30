@@ -5,28 +5,8 @@ header{
     min-height: 1000px;
     
 }
-.hero-wrap {
-    width: 100%;
-    position: inherit;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center; 
-    }
 
-.hero-wrap .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.3;
-    background: #000000; 
-    min-height: 1000px;
-}
 
-.second-nav{
-    top: -35px;
-}
 
 @media screen and (max-width: 670px){
     header{
@@ -41,17 +21,18 @@ header{
 }
 
 
+
 .logo{
-    width: 50px;
+    width: 70%;
     height: auto;
-    margin: 15px;
-    margin-left: 100px;
+    margin: 10px auto;
+    position: fixed;
 }
 
 .header-font{
     font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
     font-size: 2rem !important;
-    margin-top: 10px;
+    margin-top: 20px;
     z-index: 20;
 }
