@@ -1,13 +1,10 @@
-header{
-    background: url(../assets/bg1.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 500px;  
+
+.blue-bg{
+    background-color: #042d4d;
+    color: white;
 }
-
-
 .logo-div{
-    height: 80px;
+    background-color: #f8c301;
 }
 
 @media screen and (max-width: 670px){
@@ -31,7 +28,7 @@ h2{
 
 
 .logo{
-    width: 70%;
+    width: 50%;
     height: auto;
     margin: 10px auto;
 }
