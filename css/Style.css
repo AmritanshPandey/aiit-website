@@ -13,24 +13,64 @@
     }
 }
 
-h2{
-    line-height: 110%;
+.features{
+    border: #042d4d solid 1px;
+}
+.features .row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.features .row .col.s7 {
+    width: auto;
+}
+.symbol{
+    width: 50px;
+}
+
+.carousel.carousel-slider {
+    height: 300px !important;
+}
+.carousel.carousel-slider .carousel-item p {
+    font-size: 15px;
+    padding: 20px;
+}
+
+.features .row .col.s3 {
+    width: 25%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+    margin-top: 20px;
+}
+
+.features .title{
     font-size: 2rem;
-    font-weight: 200;
-    text-transform: uppercase;
-    margin: 1rem;
-
-}
-.z-depth-1, nav, .sidenav {
-    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0); 
-     box-shadow: 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0); 
+    font-weight: 300;
 }
 
+.features p {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+}
+
+.padding-0{
+padding: 0 !important;
+}
 
 .logo{
     width: 50%;
     height: auto;
     margin: 10px auto;
+}
+
+.carousel h4{
+    color: white;
 }
 
 .header-font{
@@ -41,6 +81,20 @@ h2{
     z-index: 20;
 }
 
+
+
+.mission h5{
+    color: #042d4d;
+    font-size: 20px;
+    text-transform: none;
+    font-weight: 400;
+}
+
+.wasc{
+    width: 50%;
+    margin: 30px auto;
+    display: block;
+}
 .card-title{
     z-index: 20;
 }
@@ -48,7 +102,17 @@ h2{
 background-color: rgb(205, 232, 255);
 }
 
+h4{
+    text-transform: uppercase;
+    color: #042d4d;
+    font-weight: 400;
+}
 
+h5{
+    text-transform: uppercase;
+    color: #042d4d;
+    font-weight: 300;
+}
 .card-image::after {
     content: "";
     position: absolute;
@@ -93,3 +157,12 @@ background-color: rgb(205, 232, 255);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=0);
     /* IE6-9 */
   }
+
+
+  .dropdown-content li>a, .dropdown-content li>span {
+    font-size: 16px;
+    color: #042d4d;
+    display: block;
+    line-height: 22px;
+    padding: 14px 16px;
+}
