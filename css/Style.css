@@ -1,4 +1,18 @@
-
+html {
+    scroll-behavior: smooth;
+  }
+.parallax-container{
+    height: 520px;
+}
+.explore{
+    height: 50px;
+    width: 100%;
+    background-color: #f8c301;
+    color: black;;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
 .blue-bg{
     background-color: #042d4d;
     color: white;
@@ -27,6 +41,7 @@
 }
 .symbol{
     width: 50px;
+    margin-top: 10px;
 }
 
 .carousel.carousel-slider {
@@ -81,7 +96,15 @@ padding: 0 !important;
     z-index: 20;
 }
 
+.btn-color{
+    color: white;
+    background-color: #042d4d;
+}
 
+.btn-color:hover{
+    color: black;
+    background-color: #f8c301;
+}
 
 .mission h5{
     color: #042d4d;
